@@ -72,6 +72,7 @@ I downloaded the nametag 3MF file through a public workshop.
 I used the scale function to enlarge the tag, and under the name portion I right clicked the text icon under the “keychain-blank.stl” (for the first and last name) and edited the text to say my name. From there I changed the font to the katari font. Using the mouse pad to click the name I was editing and adjusted its alignment to my liking. 
 After editing the tag, I decided I wanted to do a color change. To that I clicked slice now and used the vertical toggle bar to animate the printing process by layer adding a “+” , by clicking the bar, to indicate in the g-code to the printer that a pause is to occur, where I will manually load new filament into the Prusa Mini at the layer where I want a color change to happen. 
 Lastly, I saved the g-code file to the Usb drive, ejected it, and plugged it into the Prusa Mini and commenced the print. 
+                                The print was quick, and the Prusa Mini beeped to indicate a color change, after familiarizing myself with the functions, maneuvering the software felt intuitive. 
 </p>
                         </div>
                     </div>
@@ -84,7 +85,17 @@ Lastly, I saved the g-code file to the Usb drive, ejected it, and plugged it int
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-black">1.2 Calibration "Torture" Test</h4>
-                                    <p class="mb-0 text-black-50">[part two goes here]</p>
+                                    <p class="mb-0 text-black-50">Dimensions: 3.75 (W) inches x 1.25 (L) inches 
+Common error during print: bed adhesion problem, overhang, and stringing. 
+Bed Adhesion Problem: The initial layers printed on the bed failed 2 times. I attempted 3 prints in total, the second print had 2 raft layers added for better adhesion and stability. The print still failed, therefore I added 5 raft layers and it was successful. 
+
+Overhang: There is overhang present on all 8 legs of the spider. This occurred because the support/or the surface area of the legs in the previous layer is not sufficient enough to support the new layer causing the filament to droop over. 
+
+Stringing: There was excessive stringing on the print. This is caused when the nozzle has filament oozing from it while it moves to different locations on the print.
+
+The concept of the Prusa Mini being able to print an object from a set of instructions (g-code) is amazing to think about. Going into this print I assumed that it would not fail, but it did.The Prusa Mini is limited in its size, and its software. If a design is prone to error, the software cannot correct it unless the user corrects it or adds an element to the design that would solve the possible error (i.e. supports, brims, rafts, etc.). This leads me to conclude that many errors stem from user error and improper settings.
+* a .stl file formats 3D shapes and designs, but is limited in design specificities. While the .3mf file format can support a wide variety of design specifications like material type (for heating), slice settings, colors, complex design, and etc.* 
+</p>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +111,8 @@ Lastly, I saved the g-code file to the Usb drive, ejected it, and plugged it int
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-black">1.3 Assistive Devices</h4>
-                                    <p class="mb-0 text-black-50">[part three goes here]</p>
+                                    <p class="mb-0 text-black-50">The Toothpaste Tube Squeezer is designed for anyone who would run into difficulty applying ample pressure to extrude the last bit of toothpaste from the tube. People with muscular atrophy, children, and the elderly would benefit from the easy to turn knob. During the print process, I ran into an error, Initially there was a bed level issue. I ran a calibration check for a nozzle height of -1.5000, but the issue was not solely the calibration. The metal sheet was improperly placed causing one corner to curve up and impacting the extrusion height and evenness. To fix it, I ran some calibration test, went eye level with the plate, and readjusted the height to -1.47000 then -1.45000. The Tube Squeezer itself is a great concept, however the design is not sturdy enough to withstand excessive twisting. The small end cap is what holds the structure together, but during testing, would easily pop off–causing the whole thing to dismantle. A possible solution would be to make the small end cap a screw, which allows for easier adjustment. This solution would also solve the issue with the large clearance (space between parts), which makes it easy to assemble but not sturdy enough to withstand excessive use.
+</p>
                                 </div>
                             </div>
                         </div>
